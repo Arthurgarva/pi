@@ -1,0 +1,92 @@
+body {
+    background: radial-gradient(circle, #333333, #555555);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    height: 300px;
+}
+html, body {
+    overflow: hidden; /* Impede a rolagem vertical */
+    height: 100%;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Alinhar elementos no header */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+header img {
+    width: 200px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: auto; /* Coloca a imagem no canto direito */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 60px);
+}
+
+
+
+.Imagem {
+    position: fixed;
+    left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 28px 28px 28px rgba(0, 0, 0, 0.80);
+}
+
+.texto {
+    position: fixed;
+    right: 250px;
+    background-color: #000;
+    color: #fff;
+    height: 500px;
+    width: 750px;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    box-shadow: 14px 14px 14px rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilos para o texto dentro de .texto */
+.texto p,a {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-right: 70px;
+    margin-left: 70px;
+    font-size: 150%;
+}
+.texto h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-bottom: -10px;
+    font-size: 400%;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

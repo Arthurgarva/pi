@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobre.css">
+    <style>
+        /* Estilos para o formulário de contato */
+        .formulario-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        .formulario {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            margin-left: 500px;
+            margin-top: -250px;
+        }
+
+        .formulario h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .formulario label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .formulario input[type="text"],
+        .formulario input[type="email"],
+        .formulario textarea {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .formulario textarea {
+            height: 150px;
+        }
+
+        .formulario button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .formulario button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>Meu Currículo</title>
+</head>
+<body>
+    <header>
+        <h1>Arthur Cruz Galvão</h1>
+        <img src="logo.png" alt="" sizes="40%">
+    </header>
+    <div class="Imagem">
+        <img src="78600895.png" alt="">
+    </div>
+    <div class="formulario-container">
+        <div class="formulario">
+            <h1>Entre em Contato</h1>
+            <form action="processa_formulario.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    
+    <main>
+        <!-- Seu conteúdo do currículo aqui -->
+    </main>
+    
+    <footer>
+        <p>Designed by ACG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
